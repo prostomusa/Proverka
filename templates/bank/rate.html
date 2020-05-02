@@ -1,0 +1,17 @@
+{% extends 'bank/shablon.html'%}
+
+{% block title %}
+    Rate list - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <ul>
+        <li>Курс доллара: {{ dollar }}</li>
+        <li>Курс евро: {{ euro }}</li>
+    </ul>
+    <h1>Максимальные суммы для перевода обычных клиентов:</h1>
+    <ul>
+        <li>В долларах: 20 000$</li>
+        <li>В рублях: k * dollar</li>
+    </ul>
+{% endblock %}
